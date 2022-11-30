@@ -292,6 +292,7 @@ main .container aside .side-content .footer div img {
 }
 /* question-style */
 .questions-box {
+  width: 90%;
   margin: 0 -20px 48px -20px;
   border: 1px solid #dfe1e5;
   border-radius: 8px;
@@ -329,7 +330,15 @@ main .container aside .side-content .footer div img {
 @media (min-width: 576px) {
   .questions-box {
     margin-top: 2rem;
-    width: 100%;
+    width:100%;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 800px) {
+  .questions-box {
+    margin-top: 2rem;
+    width: 70%;
+    margin-left: 20px;
   }
 }
 /* ending question-style */
@@ -354,6 +363,13 @@ main .container aside .side-content .footer div img {
 }
 .related-resaults ul li a{
   color: var(--text-color);
+}
+@media (max-width:576px) {
+  .related-resaults{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
 }
 /* ending related-resaults */
 /* Pager section */
